@@ -1,13 +1,20 @@
+// set color variables
+$color_1: #1bb18e;
+$color_2: #0f202a;
+$grad_1: #03a971;
+$grad_2: #01864f;
+$grad_3: #026f32;
+
 // color scheme
 $colors: (
   'color_1': #1bb18e,
   'color_2': #0f202a,
   'grad_1': #03a971,
-  'grad_2': #01864f,
-  'grad_3': #026f32,
+  'grad_2': #016f35,
+  'grad_3': #01662d,
 );
-// mixin to set background color
 
+// mixin to set background color
 @mixin back-color($color) {
   // map through to pick color
   @if map-has-key($colors, $color) {

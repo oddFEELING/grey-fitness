@@ -61,11 +61,17 @@ module.exports = {
       //--> set type for image an jpeg
       {
         test: /\.png|jpe?g|gif/i,
-        type: 'asset/resource',
+        type: 'asset',
       },
     ],
   },
 
   //-->  all plugins
   plugins: [new HtmlWebpackPlugin({ template: './public/index.html' })],
+
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
 };
